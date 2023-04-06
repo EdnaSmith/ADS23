@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercio 04 </title>
+    <script>
+
+        var nomeVendador = prompt("digite o nome do vendedor")
+        console.log("Nome: ", nomeVendador)
+
+        var salarioFixo = parseFloat(prompt("digite o valor do salario fixo")) 
+        console.log("salario bruto ", salarioFixo)
+
+        var vendasEfetuadas = parseFloat( prompt("digite o valor das vendas"))
+        console.log("vendas e fetuadas ",vendasEfetuadas)
+
+        var comissao = vendasEfetuadas * 0.15
+        console.log("comissao de 15% ",comissao)
+
+        var salarioFinal = salarioFixo + comissao
+        console.log("salario liquido ",salarioFinal)
+
+        alert("Nome: " + nomeVendador + " salario fixo " +salarioFixo + " salario final " +salarioFinal)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
