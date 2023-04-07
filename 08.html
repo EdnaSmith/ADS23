@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,36 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-
-
-        function somar(a,b){
-            return a+b
-        }
-
-        function getNome(){
-            return "Edna"
-        }
-
-        function escreva(){
-            console.log("Estou escrevendo algo")
-        }
-
-        function descrevaNome(nome){
-            console.log("Seu nome é ", nome)
-            return "Seu nome é " + nome
-        }
         
+        const cotacaoDolar = parseFloat(prompt("Digite a cotação do dólar:"));
+        const quantidadeDolar = parseFloat(prompt("Digite a quantidade de dólares que você possui:"));
 
-        console.log("Edna: ", somar("5",2))
+        const valorReal = cotacaoDolar * quantidadeDolar;
 
-
-        console.log("Kelvin: ", somar(5,2))
-    
-       
-
-
-        
-
+        alert(`O valor em reais é R$ ${valorReal.toFixed(2)}.`);
 
     </script>
 </head>
