@@ -4,30 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> <script>
-        // array para armazenar os números gerados
-let numeros = [];
+    <title>Document</title>
+    <script>
+        let num, count = 0;
 
-// gerando 80 números aleatórios entre 1 e 200
-for (let i = 0; i < 80; i++) {
-  numeros.push(Math.floor(Math.random() * 200) + 1);
-}
+        for (let i = 0; i < 80; i++) {
+            num = Number(prompt(`Digite o número ${i + 1}:`));
 
-// contador para armazenar a quantidade de números no intervalo desejado
-let contador = 0;
+            if (num >= 10 && num <= 150) {
+                count++;
+            }
+        }
 
-// percorrendo o array de números gerados e verificando se estão no intervalo desejado
-for (let i = 0; i < numeros.length; i++) {
-  if (numeros[i] >= 10 && numeros[i] <= 150) {
-    contador++;
-  }
-}
+        console.log(`Existem ${count} números no intervalo entre 10 e 150.`);
 
-// exibindo a quantidade de números no intervalo desejado
-alert("Quantidade de números no intervalo entre 10 e 150: " + contador);
     </script>
 </head>
 <body>
-    
+
 </body>
 </html>
