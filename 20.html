@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20</title>
+    <script>
+
+        let totalCarrosAte2000 = 0;
+        let totalGeral = 0;
+
+        do {
+            const ano = Number(prompt("Digite o ano do carro:"));
+            const valor = Number(prompt("Digite o valor do carro:"));
+
+            let desconto;
+            if (ano <= 2000) {
+                desconto = 0.12;
+                totalCarrosAte2000++;
+            } else {
+                desconto = 0.07;
+            }
+
+            const valorDesconto = valor * desconto;
+            const valorFinal = valor - valorDesconto;
+
+            alert(`Valor do desconto: R$ ${valorDesconto.toFixed(2)}`);
+            alert(`Valor a ser pago: R$ ${valorFinal.toFixed(2)}`);
+
+            totalGeral++;
+
+            var continuar = prompt("Deseja continuar calculando desconto? (S/N)").toUpperCase();
+        } while (continuar !== 'N');
+
+        alert(`Total de carros com ano até 2000: ${totalCarrosAte2000}, Total geral de carros: ${totalGeral}`);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
