@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Semestre</title>
+    <script>
+        var nomeAluno = prompt("Digite o nome do aluno?")
+        var nota1 = parseFloat( prompt("Digite sua nota "))
+        var nota2 = parseFloat( prompt("Digite sua segunda nota "))
+        var nota3 = parseFloat( prompt("Digite sua teceira nota "))
+
+        var media = (nota1 + nota2 + nota3)/3
+
+
+        if (media >=7){
+            alert(nomeAluno + "Aprovado meus Parabes")
+        } else if(media <=5) {
+            alert(nomeAluno + "Recuperação")
+        } else {
+            alert(nomeAluno + "vc esta de Recuperação")
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
