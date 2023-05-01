@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21</title>
+    <script>
+
+        let totalAptos = 0;
+        let totalInaptos = 0;
+
+        const n = Number(prompt("Digite a quantidade de pessoas a serem avaliadas:"));
+
+        for (let i = 1; i <= n; i++) {
+            console.log(`Pessoa ${i}:`);
+
+            const nome = prompt("Digite o nome:");
+            const sexo = prompt("Digite o sexo (M/F):").toUpperCase();
+            const idade = Number(prompt("Digite a idade:"));
+            const saude = prompt("Digite a condição de saúde (BOA/REGULAR/RUIM):").toUpperCase();
+
+            let apto = true;
+
+            if (sexo === 'M' && idade >= 18 && saude !== 'RUIM') {
+                apto = true;
+            } else if (sexo === 'F' && idade >= 18 && idade <= 45 && saude !== 'RUIM') {
+                apto = true;
+            } else {
+                apto = false;
+            }
+
+            if (apto) {
+                alert(`${nome} está apto(a) para cumprir o serviço militar obrigatório.`);
+                totalAptos++;
+            } else {
+                alert(`${nome} não está apto(a) para cumprir o serviço militar obrigatório.`);
+                totalInaptos++;
+            }
+        }
+
+        alert(`Total de pessoas aptas: ${totalAptos}, Total de pessoas inaptas: ${totalInaptos}`);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
