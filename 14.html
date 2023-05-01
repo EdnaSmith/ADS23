@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- NOME EDINA DA CONCEICAO -->
+    <!-- TURMA: AC11 -->
+    <!-- MATRICULA: 23114290188 -->
+
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> <script>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Document</title>
+    <script>
         // lê o nome do aluno
-const nome = prompt("Digite o nome do aluno:");
+        const nome = prompt("Digite o nome do aluno:");
 
-// lê as notas do aluno
-const nota1 = parseFloat(prompt("Digite a primeira nota:"));
-const nota2 = parseFloat(prompt("Digite a segunda nota:"));
-const nota3 = parseFloat(prompt("Digite a terceira nota:"));
+        // lê as notas do aluno
+        const nota1 = parseFloat(prompt("Digite a primeira nota:"));
+        const nota2 = parseFloat(prompt("Digite a segunda nota:"));
+        const nota3 = parseFloat(prompt("Digite a terceira nota:"));
 
-// calcula a média aritmética
-const media = (nota1 + nota2 + nota3) / 3;
+        // calcula a média aritmética
+        const media = (nota1 + nota2 + nota3) / 3;
 
-// classifica o aluno com base na sua média
-let mencao;
-if (media >= 7) {
-  mencao = "Aprovado";
-} else if (media >= 5) {
-  mencao = "Em recuperação";
-} else {
-  mencao = "Reprovado";
-}
+        // classifica o aluno com base na sua média
+        let mencao;
+        if (media >= 7) {
+            mencao = "Aprovado";
+        } else if (media >= 5) {
+            mencao = "Em recuperação";
+        } else {
+            mencao = "Reprovado";
+        }
 
-// exibe o resultado
-alert(`${nome} teve média ${media.toFixed(2)} e está ${mencao}.`);
+        // exibe o resultado
+        alert(`${nome} teve média ${media.toFixed(2)} e está ${mencao}.`);
     </script>
 </head>
 <body>
-    
+
 </body>
 </html>

@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- NOME EDINA DA CONCEICAO -->
+    <!-- TURMA: AC11 -->
+    <!-- MATRICULA: 23114290188 -->
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> <script>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Document</title>
+    <script>
 
         // Lê o custo de fábrica do carro
-var custoFabrica = parseFloat( prompt("Qual o custo de fábrica do carro?"));
+        var custoFabrica = parseFloat(prompt("Qual o custo de fábrica do carro?"));
 
-// Calcula o custo ao consumidor
-var impostos = custoFabrica * 0.45;
-var custoDistribuidor = (custoFabrica + impostos) * 0.28;
-var custoConsumidor = custoFabrica + impostos + custoDistribuidor;
+        // Calcula o custo ao consumidor
+        var impostos = custoFabrica * 0.45;
+        var custoDistribuidor = (custoFabrica + impostos) * 0.28;
+        var custoConsumidor = custoFabrica + impostos + custoDistribuidor;
 
-// Exibe o custo ao consumidor na tela
-alert("O custo ao consumidor é R$ " + custoConsumidor.toFixed(2));
+        // Exibe o custo ao consumidor na tela
+        alert("O custo ao consumidor é R$ " + custoConsumidor.toFixed(2));
 
     </script>
 </head>
 <body>
-    
+
 </body>
 </html>
