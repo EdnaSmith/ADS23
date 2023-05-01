@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21</title>
+    <script>
+
+        let totalCusto = 0;
+        let totalVenda = 0;
+        let totalLucro = 0;
+        let totalPrejuizo = 0;
+        let totalEmpate = 0;
+
+        for (let i = 1; i <= 40; i++) {
+            console.log(`Produto ${i}:`);
+
+            const precoCusto = Number(prompt("Digite o preço de custo:"));
+            const precoVenda = Number(prompt("Digite o preço de venda:"));
+
+            if (precoVenda > precoCusto) {
+                console.log("Houve lucro.");
+                totalLucro++;
+            } else if (precoVenda < precoCusto) {
+                console.log("Houve prejuízo.");
+                totalPrejuizo++;
+            } else {
+                console.log("Houve empate.");
+                totalEmpate++;
+            }
+
+            totalCusto += precoCusto;
+            totalVenda += precoVenda;
+        }
+
+        const mediaCusto = totalCusto / 40;
+        const mediaVenda = totalVenda / 40;
+
+        alert(`Média de preço de custo: ${mediaCusto}, Média de preço de venda: ${mediaVenda},
+         Total de produtos com lucro: ${totalLucro}, Total de produtos com prejuízo: ${totalPrejuizo}, Total de produtos com empate: ${totalEmpate}`);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
