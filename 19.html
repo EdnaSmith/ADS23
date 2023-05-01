@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19</title>
+    <script>
+
+        let totalHomens = 0;
+        let totalMulheres = 0;
+
+        for (let i = 0; i < 56; i++) {
+            const nome = prompt(`Digite o nome da pessoa ${i + 1}:`);
+            const sexo = prompt(`Digite o sexo da pessoa ${i + 1} (M para masculino, F para feminino):`);
+
+            if (sexo.toUpperCase() === 'M') {
+                alert(`${nome} - Homem`);
+                totalHomens++;
+            } else if (sexo.toUpperCase() === 'F') {
+                alert(`${nome} - Mulher`);
+                totalMulheres++;
+            } else {
+                alert(`${nome} - Sexo inválido`);
+            }
+        }
+
+        alert(`Total de homens: ${totalHomens}, Total de mulheres: ${totalMulheres} `);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
